@@ -14,7 +14,7 @@ app do instagram
 - Curtidas 
 
 ### Estruturas dos Dados 
-'''mermaid 
+```mermaid 
 classDiagram
     Usuario --> Post: OneToMany
     
@@ -47,3 +47,4 @@ classDiagram
    class Curtida {
 
    }
+```
