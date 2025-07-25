@@ -17,7 +17,14 @@ app do instagram
 
 ```mermaid 
 
- class Usuario {
+classDiagram
+    Usuario --> Post: OneToMany
+    Usuario --> Comentario: OneToMany
+    Post --> Comentario: OneToMany
+    Post  --> Curtida: OneToMany    
+    Usuario --> Curtida: OneToMany
+
+    class Usuario {
         + id
         + nome 
         + nickname
