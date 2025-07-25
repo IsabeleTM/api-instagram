@@ -14,7 +14,9 @@ app do instagram
 - Curtidas 
 
 ### Estruturas dos Dados 
+
 ```mermaid 
+
  class Usuario {
         + id
         + nome 
@@ -50,4 +52,5 @@ app do instagram
         + usuario_id
         + post_id
         + criado_em 
-   }```
+   }
+   ```
