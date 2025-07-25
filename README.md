@@ -15,10 +15,7 @@ app do instagram
 
 ### Estruturas dos Dados 
 ```mermaid 
-classDiagram
-    Usuario --> Post: OneToMany
-    
-    class Usuario {
+ class Usuario {
         + id
         + nome 
         + nickname
@@ -41,10 +38,17 @@ classDiagram
     }
 
     class Comentario {
-
+        + id 
+        + usuario_id
+        + post_id
+        + conteudo
+        +
     }
 
-   class Curtida {
-
+    class Curtida {
+        + id
+        + usuario_id
+        + post_id
+        + criado_em 
    }
 ```
